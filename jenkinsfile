@@ -1,6 +1,9 @@
 @Library('pipeline-library-demo1') _
 pipeline {
   agent any    
+      tools {
+  nodejs 'node'
+}
   stages {     
     stage('git checkout') {
       steps {

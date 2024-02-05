@@ -3,9 +3,8 @@ pipeline {
   agent any
   tools {nodejs "node"}
     
-  stages {
-        
-    stage('Git') {
+  stages {     
+    stage('git checkout') {
       steps {
         git 'https://github.com/anitha8242/AngularCalculator.git'
       }
